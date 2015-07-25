@@ -4,8 +4,15 @@ tags: [c++,Copy-on-Write]
 ---
 
 ##前言
-参加阿里实习生招聘的时候问道了写时复制技术怎么实现的，当时猜是用引用计数实现的，但是具体怎么实现的，还真不清楚。
+参加阿里实习生招聘的时候问道了写时复制技术怎么实现的，当时猜是用引用计数实现的，但是具体怎么实现的，还真不清楚。后台网上查了一些资料，发现这三篇博文很有参考价值，就一股脑儿转载在这。
+
 <!-- more --> 
+
+
+--- -------- ------ ---华丽丽的分割线，以下转载之陈皓酷壳（CoolShell.cn）上的[C++ STL string的Copy-On-Write技术](http://coolshell.cn/articles/12199.html)---- ----- ----- -----  -----------
+
+
+
 ##写时复制
 Scott Meyers在《More Effective C++》中举了个例子，不知你是否还记得？在你还在上学的时候，你的父母要你不要看电视，而去复习功课，于是你把自己关在房间里，做出一副正在复习功课的样子，其实你在干着别的诸如给班上的某位女生写情书之类的事，而一旦你的父母出来在你房间要检查你是否在复习时，你才真正捡起课本看书。这就是“拖延战术”，直到你非要做的时候才去做。
 
@@ -292,6 +299,15 @@ main()
 
 更新：在最新的STL中，这个特性已经被去掉了。有一个原因是线程不安全！COW其实还是比较危险的。
 
+
+
+
+
+--- -------- ------ ---华丽丽的分割线，以下转载之陈皓酷壳（CoolShell.cn）上的[C++的std::string的“读时也拷贝”技术！](http://coolshell.cn/articles/1443.html)---- ----- ----- -----  -----------
+
+
+
+
 ##读时复制
 C++的std::string的读时也拷贝技术！
 
@@ -392,7 +408,16 @@ int main( )
 这篇文章出自http://ridiculousfish.com/blog/archives/2009/09/17/i-didnt-order-that-so-why-is-it-on-my-bill-episode-2/ 这里，我使用了它的例子。但是我重新自己组织了内容。
 
 编写这篇文章的同时，我还参考了耗子的《标准C＋＋类string的Copy-On-Write技术》一文 
+
+
+
+------- ------ -------  ----- 华丽丽的分割线，以下转载之[I Didn't Order That, So Why Is It On My Bill, Episode 2](http://ridiculousfish.com/blog/archives/2009/09/17/i-didnt-order-that-so-why-is-it-on-my-bill-episode-2/)----  ------- ------- ------  
+
+
+
+
 ## I Didn't Order That, So Why Is It On My Bill, Episode 2
+
 This is the second episode of I Didn't Order That, So Why Is It On My Bill: C++ features you never use, but pay for anyways. See episode one here.
 
 For those who like their punchlines first: std::string is designed to allow copy-on-write. But once operator[] is called, that string is ruined for COW forevermore. The reason is that it has to guard against a future write at any time, because you may have stashed away the internal pointer that operator[] returns - a feature that you surely know better than to use, but that costs you nevertheless.
