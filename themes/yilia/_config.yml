@@ -1,0 +1,64 @@
+# Header
+menu:
+  主页: /
+  所有文章: /archives
+  # 随笔: /tags/随笔
+
+# SubNav
+subnav:
+  github: "https://github.com/hellominix"
+  weibo: "http://weibo.com/2456464360/"
+  #zhihu: "#"
+  douban: "http://www.douban.com/people/91884948/"
+
+  #mail: "#"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+rss: /atom.xml
+
+# Content
+excerpt_link: more
+fancybox: true
+mathjax: true
+
+# Miscellaneous
+google_analytics: ''
+favicon: /favicon.png
+
+#你的头像url
+avatar: "https://avatars2.githubusercontent.com/u/1670614?v=3&u=cf4cb181657b0f9202d337946df68396d1b217ee&s=140"
+#是否开启分享
+share: true
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: true
+duoshuo: "hellominix" 
+#是否开启云标签
+tagcloud: true
+
+#是否开启友情链接
+#不开启——
+#friends: false
+#开启——
+
+friends:
+  酷壳: "http://coolshell.cn/"
+  刘未鹏的博客: "http://mindhacks.cn/"
+  CodingHorror: "http://blog.codinghorror.com/"
+  HackerNews: "https://news.ycombinator.com/"
+  James Hamilton: "http://perspectives.mvdirona.com/"
+  Qt: "http://www.qt.io/"
+  AllThingsDistributed: "http://www.allthingsdistributed.com/"
+  HighScalability: "http://highscalability.com/"
+  rust: "http://www.rust-lang.org/"
+  awesome: "https://github.com/sindresorhus/awesome"
+  好东西传送门: "http://memect.com/"
+  
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+#开启——
+aboutme: 就读于中国地质大学（武汉），计算机学院，小硕一枚。对心理学与思维，数据分析，机器学习感兴趣。
