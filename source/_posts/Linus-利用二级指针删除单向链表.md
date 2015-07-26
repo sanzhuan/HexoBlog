@@ -9,7 +9,7 @@ Linus大婶在slashdot上回答一些编程爱好者的提问，其中一个人�
 
 一般教科书上的单链表删除的代码非常易懂，代码如下：
 
-```   
+``` C++ 
   typedef struct node {  struct node *next;.... } node;
   typedef bool(* remove_fn)(node const* v);
 
@@ -40,7 +40,7 @@ Linus大婶在slashdot上回答一些编程爱好者的提问，其中一个人�
 
 但是个人觉得他们对下面代码的解释不是很详细，有点费解。因此在这详细解释下面的代码。
 
-```
+``` C++
 void remove_if(node ** head, remove_fn rm)
 {
     for(node** curr = head; *curr; )
