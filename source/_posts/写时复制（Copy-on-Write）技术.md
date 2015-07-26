@@ -5,15 +5,9 @@ tags: [c++,Copy-on-Write]
 
 ##前言
 参加阿里实习生招聘的时候问道了写时复制技术怎么实现的，当时猜是用引用计数实现的，但是具体怎么实现的，还真不清楚。后台网上查了一些资料，发现这三篇博文很有参考价值，就一股脑儿转载在这。
-
 <!-- more --> 
+##写时复制( 转载之陈皓酷壳（CoolShell.cn）上的[C++ STL string的Copy-On-Write技术](http://coolshell.cn/articles/12199.html) )
 
-
---- -------- ------ ---华丽丽的分割线，以下转载之陈皓酷壳（CoolShell.cn）上的[C++ STL string的Copy-On-Write技术](http://coolshell.cn/articles/12199.html)---- ----- ----- -----  -----------
-
-
-
-##写时复制
 Scott Meyers在《More Effective C++》中举了个例子，不知你是否还记得？在你还在上学的时候，你的父母要你不要看电视，而去复习功课，于是你把自己关在房间里，做出一副正在复习功课的样子，其实你在干着别的诸如给班上的某位女生写情书之类的事，而一旦你的父母出来在你房间要检查你是否在复习时，你才真正捡起课本看书。这就是“拖延战术”，直到你非要做的时候才去做。
 
 当然，这种事情在现实生活中时往往会出事，但其在编程世界中摇身一变，就成为了最有用的技术，正如C++中的可以随处声明变量的特点一样，Scott Meyers推荐我们，在真正需要一个存储空间时才去声明变量（分配内存），这样会得到程序在运行时最小的内存花销。执行到那才会去做分配内存这种比较耗时的工作，这会给我们的程序在运行时有比较好的性能。必竟，20%的程序运行了80%的时间。
@@ -300,15 +294,8 @@ main()
 更新：在最新的STL中，这个特性已经被去掉了。有一个原因是线程不安全！COW其实还是比较危险的。
 
 
+##读时复制( 转载之陈皓酷壳（CoolShell.cn）上的[C++的std::string的“读时也拷贝”技术！](http://coolshell.cn/articles/1443.html) )
 
-
-
---- -------- ------ ---华丽丽的分割线，以下转载之陈皓酷壳（CoolShell.cn）上的[C++的std::string的“读时也拷贝”技术！](http://coolshell.cn/articles/1443.html)---- ----- ----- -----  -----------
-
-
-
-
-##读时复制
 C++的std::string的读时也拷贝技术！
 
 嘿嘿，你没有看错，我也没有写错，是读时也拷贝技术。什么?我的错，你之前听说写过时才拷贝，嗯，不错的确有这门技术，英文是Copy On Write，简写就是COW,非常’牛’！那么我们就来看看这个’牛’技术的效果吧。
@@ -409,14 +396,7 @@ int main( )
 
 编写这篇文章的同时，我还参考了耗子的《标准C＋＋类string的Copy-On-Write技术》一文 
 
-
-
-------- ------ -------  ----- 华丽丽的分割线，以下转载之[I Didn't Order That, So Why Is It On My Bill, Episode 2](http://ridiculousfish.com/blog/archives/2009/09/17/i-didnt-order-that-so-why-is-it-on-my-bill-episode-2/)----  ------- ------- ------  
-
-
-
-
-## I Didn't Order That, So Why Is It On My Bill, Episode 2
+## [I Didn't Order That, So Why Is It On My Bill, Episode 2](http://ridiculousfish.com/blog/archives/2009/09/17/i-didnt-order-that-so-why-is-it-on-my-bill-episode-2/)
 
 This is the second episode of I Didn't Order That, So Why Is It On My Bill: C++ features you never use, but pay for anyways. See episode one here.
 
