@@ -10,7 +10,12 @@ Linus大婶在slashdot上回答一些编程爱好者的提问，其中一个人�
 一般教科书上的单链表删除的代码非常易懂，代码如下：
 
 ``` C++ 
-  typedef struct node {  struct node *next;.... } node;
+  typedef struct node 
+  {  
+    struct node *next;
+    .... 
+  } node;
+
   typedef bool(* remove_fn)(node const* v);
 
   // Remove all nodes from the supplied list for which the 
@@ -19,9 +24,9 @@ Linus大婶在slashdot上回答一些编程爱好者的提问，其中一个人�
 
   node * remove_if(node * head, remove_fn rm)
   {
-  	for(node * prev = NULL,* curr = head; curr != NULL;)
+    for(node * prev = NULL,* curr = head; curr != NULL;)
   	{        
-     	node *const next = curr->next;
+      node *const next = curr->next;
      	if(rm(curr))
      	{
      		if(prev)                
@@ -32,8 +37,8 @@ Linus大婶在slashdot上回答一些编程爱好者的提问，其中一个人�
      	}
      	else            
      		prev = curr;        
-     		curr =next;
-     }
+     	curr =next;
+    }
      return head;
   }
 ```
