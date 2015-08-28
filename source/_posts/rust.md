@@ -19,7 +19,7 @@ tags: rust
 1. awesome-rust：https://github.com/kud1ing/awesome-rust
 2. csdn收集的Rust资料汇总：http://geek.csdn.net/news/detail/35572
 3. 每周更新的rust动态：http://this-week-in-rust.org/
-
+4. 一个德国软件工程师收集的rust资源：https://rust.zeef.com/harris.brakmic
 ### 社区
 1. rust reddit社区：https://www.reddit.com/r/rust
 2. stackoverflow：https://stackoverflow.com/questions/tagged/rust
