@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hellominix的个人博客
-subtitle: "talk is cheap, show me the code."
-description: hellominix's blog | c++ | python | rust
-author: minix
+title: xmwu2016的个人博客
+subtitle: "坚持深度思考以获得自信，由这份自信得到快乐"
+description: xmwu2016's blog | c++ | python | rust
+author: xmwu2016
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://hellominix.github.io/
+url: http://xmwu2016.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -70,5 +70,5 @@ theme: yilia
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/hellominix/hellominix.github.io.git    
+  repository: https://github.com/xmwu2016/xmwu2016.github.io.git    
   branch: master 

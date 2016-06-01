@@ -11,9 +11,8 @@ tags: rust
 3. rust参考手册：http://doc.rust-lang.org/book/README.html 
 4. rust参考手册中文版：https://www.gitbook.com/book/kaisery/rust-book-chinese
 5. 通过例子学rust：http://rustbyexample.com/index.html
-6. rust标准库：http://doc.rust-lang.org/std/ 
-7. rust在线编辑器：https://play.rust-lang.org/ 
-8. 24天学rust：https://zsiciarz.github.io/24daysofrust/index.html
+6. rust在线编辑器：https://play.rust-lang.org/ 
+7. 24天学rust：https://zsiciarz.github.io/24daysofrust/index.html
 
 ### 网上收集的资源
 1. awesome-rust：https://github.com/kud1ing/awesome-rust
