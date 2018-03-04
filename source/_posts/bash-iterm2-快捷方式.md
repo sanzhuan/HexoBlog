@@ -1,6 +1,7 @@
 title: "bash&iterm2 快捷方式"
-date: 2016-02-28 11:14:22
-tags: tools
+date: 2017-12-31 23:14:22 
+tags: [tools]
+categories: 工具
 ---
 ## Basic moves
 
@@ -9,7 +10,7 @@ tags: tools
 + Delete current character. Ctrl + d
 + Delete previous character. Backspace
 + Undo. Ctrl + -
-<!-- more -->
+
 ## Moving faster
 
 + Move to the start of line. Ctrl + a
@@ -23,7 +24,7 @@ What is Meta? Meta is your Alt key, normally. For Mac OSX user, you need to enab
 
 + Cut from cursor to the end of line. Ctrl + k
 + Cut from cursor to the end of word. Meta + d
-* Cut from cursor to the start of word. Meta + Backspace
++ Cut from cursor to the start of word. Meta + Backspace
 + Cut from cursor to previous whitespace. Ctrl + w
 + Paste the last cut text. Ctrl + y
 + Loop through and paste previously cut text. Meta + y (use it after Ctrl + y)
@@ -36,7 +37,7 @@ What is Meta? Meta is your Alt key, normally. For Mac OSX user, you need to enab
 + End the search at current history entry. Ctrl + j
 + Cancel the search and restore original line. Ctrl + g
 
- 参考：
+## 参考：
  http://teohm.com/blog/2012/01/04/shortcuts-to-move-faster-in-bash-command-line/
  http://www.bigsmoke.us/readline/shortcuts
  http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/

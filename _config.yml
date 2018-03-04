@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: xmwu2016的个人博客
-subtitle: "坚持深度思考以获得自信，由这份自信得到快乐"
-description: xmwu2016's blog | c++ | python | rust
-author: xmwu2016
-language: zh-CN
+title: sanzhuan的个人博客
+subtitle: "种一棵树最好的时间是十年前，其次是现在"
+description: sanzhuan's blog | java | rust
+author: sanzhuan
+language: zh-Hans
 timezone:
 
 # URL
@@ -62,13 +62,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 plugins:
-- hexo-generator-feed
+##- hexo-generator-feed
 ## Themes: http://hexo.io/themes/
-theme: yilia
+theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/xmwu2016/xmwu2016.github.io.git    
+  repository: https://github.com/sanzhuan/sanzhuan.github.io.git    
   branch: master 
